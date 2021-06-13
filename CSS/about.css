@@ -1,0 +1,195 @@
+.parallax.about {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.1)),
+        url("../images/about.jpg");
+}
+
+#about-us .container {
+    padding: 4em 0;
+}
+
+#about-us .wrapper {
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+#about-us .about-us-img {
+    background-image: url("../images/about-student.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex: 40%;
+}
+
+#about-us .about-us-text {
+    background-color: white;
+    flex: 60%;
+}
+
+#about-us .about-us-text > h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 1em;
+    /* padding-top: 1em; */
+    margin: 0;
+}
+
+#about-us .about-us-text > p {
+    color: #666;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+    padding: 0 2em 2em;
+}
+
+#vision .container {
+    padding: 4em 0;
+}
+
+#vision .wrapper {
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 23em;
+}
+
+#vision .vision-text {
+    background-color: white;
+    flex: 60%;
+}
+
+#vision .vision-text > h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    /* padding-left: 1em;
+    padding-top: 1em; */
+}
+
+#vision .vision-text > p {
+    color: #666;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-right: 1em;
+    /* padding: 2em;
+    padding-bottom: 1em; */
+}
+
+#vision .vision-text > ul {
+    color: #666;
+    font-size: 16px;
+    line-height: 2em;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+    /* padding-left: 4em; */
+
+}
+
+#vision .vision-img {
+    background-image: url("../images/about-writing.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex: 40%;
+}
+
+#testimonial-area {
+    background-image: url("../images/about-testimonial-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#testimonial-area::before {
+    background: #0c314ee6;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#testimonial-area .wrapper {
+    display: flex;
+    height: 500px;
+}
+
+
+#testimonial-area .testimonial-content {
+    color: white;
+    margin: auto;
+    padding: 2em 0;
+    text-align: center;
+    width: 400px;
+    z-index: 1;
+}
+
+#testimonial-area .course-name{
+    font-size: 1rem;
+}
+
+#testimonial-area .testimonial-content > img {
+    border-radius: 50%;
+}
+
+@media all and (max-width: 768px) {
+
+    #vision .container {
+        padding: 0;
+    }
+    #vision .vision-text > h2 {
+        padding: 1em 0 0 1em;
+    }
+    #vision .vision-text > p {
+        padding: 0 2em;
+        margin-right: 0;
+    }
+    #vision .vision-text > ul {
+        margin: 1em 2em;
+    }
+
+    #about-us .about-us-text > h2{
+        padding-top: 1em;
+    }
+    #about-us .wrapper {
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+        display: block;
+        margin: auto;
+        width: 95%;
+    }
+
+    #about-us .about-us-img {
+        background-position: top;
+        flex: none;
+        height: 350px;
+    }
+
+    #vision .wrapper {
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: auto;
+    }
+
+    #vision .vision-text::before {
+        background-image: url("../images/about-writing.jpg");
+        background-position: center;
+        background-size: cover;
+        content: "";
+        display: block;
+        height: 350px;
+    }
+
+}
